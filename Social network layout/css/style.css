@@ -1,0 +1,147 @@
+body {
+    background-color: gainsboro;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+.logo {
+    border-radius: 50%;
+    max-width: 15%;
+    height: auto;
+}
+.navigation_and_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+.navigation {
+    /* connection flex and inline */
+    display: flex;
+    /* deactivation of early style */
+    list-style-type: none;
+    padding-left: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+/* Create text and style blocks on menu */
+/* Delete first line */
+.navigation>li:first-child::before {
+    display: none;
+}
+.navigation>li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+.navigation>li {
+    padding-left: 25px;
+    margin-left: 25px;
+    position: relative;
+}
+/* Create line on menu */
+.navigation>li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: darkslategrey;
+}
+/* Delete default style */
+.navigation>li>a {
+    text-decoration: none;
+    color: darkslategrey;
+}
+
+/* Style and edit picture of background*/
+.banner {    
+    background-image: url(../image/banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    padding-top: 265px;
+    padding-bottom: 275px;
+
+}
+
+.picture {
+    position: absolute;
+    right: 0;
+    top: -260px;
+}
+
+.title {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.description {
+    font-size: 25px;
+    line-height: 30px;
+    max-width: 500px;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 25px;
+}
+/* Style and edit button on banner*/
+.button {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: white 2px solid;
+    padding: 16px 0;
+    max-width: 190px;
+    text-align: center;
+}
+.how {
+    font-size: 35px;
+    color: darkslategrey;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    position: relative;    
+}
+/* Style and edit menu. As above.*/
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.menu > li {
+    padding-left: 25px;
+    margin-left: 25px;
+    position: relative;
+}
+.menu > li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background-color: darkslategrey;
+}
+.menu>li>a {
+    text-decoration: none;
+    color: darkslategrey;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.menu>li:first-child::before {
+    display: none;
+}

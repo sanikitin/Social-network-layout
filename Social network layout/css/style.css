@@ -69,8 +69,8 @@ body {
     background-size: cover;
     background-position: center center;
     color: white;
-    padding-top: 265px;
-    padding-bottom: 275px;
+    padding-top: 240px;
+    padding-bottom: 240px;
 
 }
 
@@ -119,6 +119,7 @@ body {
     justify-content: center;
     list-style-type: none;
     padding-left: 0;
+    padding-bottom: 30px;
 }
 .menu > li {
     padding-left: 25px;
@@ -144,4 +145,51 @@ body {
 }
 .menu>li:first-child::before {
     display: none;
+}
+/* creating a line under the menu */
+.menu>li>a.active {
+    border-bottom: 4px solid darkslategrey;
+    position: relative;
+}
+.menu>li>a.active::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 7px solid transparent;
+    border-bottom: 7px solid darkslategrey;
+    
+}
+.startbutton {
+    position: relative;
+    display: block;
+    color: darkslategrey;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: darkslategrey 2px solid;
+    padding: 16px 0;
+    text-align: center;
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    left: 40%;
+}
+.footer {
+    background-image: url(../image/banner.png);
+    padding: 45px 0;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.page {
+    padding-top: 120px;
 }
